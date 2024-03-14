@@ -7,7 +7,6 @@ export const theme = {
         scienceblue: "#0366D6",
         mineshaft: "#252525",
         whitelilac: "#FBFBFE",
-        violet: "#090A33",
-        
+        violet: "rgba(9, 10, 51, 0.03)",
     },
 };

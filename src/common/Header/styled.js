@@ -4,7 +4,7 @@ export const Title = styled.article`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 72px;
-    margin: 119px ;
+    margin: 119px auto ;
     max-width: 1089px;
 `;
 

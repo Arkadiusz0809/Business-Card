@@ -1,13 +1,19 @@
-import { Img, Section, Title, TitleContent } from "./styled";
-import toolImg from "../../images/tools.svg";
+import { List, ListItem, Section, Title } from "./styled";
 
-const SkillSection = ({ title }) => {
+const SkillSection = ({ title, skills }) => {
 
     return (
         <Section>
-            <TitleContent>
-                <Title>{title}</Title>
-            </TitleContent>
+            <Title>{title}</Title>
+            <List>
+                {skills && skills.map((skill, index) => (
+                    <ListItem
+                        key={index} 
+                    >
+                        {skill}
+                    </ListItem>
+                ))}
+            </List>
         </Section>
     )
 }
