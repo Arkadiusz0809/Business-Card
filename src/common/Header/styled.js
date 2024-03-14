@@ -4,7 +4,8 @@ export const Title = styled.article`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 72px;
-    margin-top: 119px;
+    margin: 119px ;
+    max-width: 1089px;
 `;
 
 export const Img = styled.img`
@@ -51,7 +52,7 @@ export const Button = styled.button`
 `;
 
 export const ButtonName = styled.div`
-    margin-left: 20px;
+    padding-left: 16px;
 `;
 
 export const ButtonRectangle = styled.img`
