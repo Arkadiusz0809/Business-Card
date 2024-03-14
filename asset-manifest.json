@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/Business-Card/static/js/main.30099eeb.js",
+    "static/js/453.d0c65a9d.chunk.js": "/Business-Card/static/js/453.d0c65a9d.chunk.js",
+    "static/media/Arek.png": "/Business-Card/static/media/Arek.863c98d7d9d90ee8769c.png",
+    "index.html": "/Business-Card/index.html",
+    "static/media/mail-icon.svg": "/Business-Card/static/media/mail-icon.514461521cb8d76b55e16ac430346abb.svg",
+    "main.30099eeb.js.map": "/Business-Card/static/js/main.30099eeb.js.map",
+    "453.d0c65a9d.chunk.js.map": "/Business-Card/static/js/453.d0c65a9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.30099eeb.js"
+  ]
+}
