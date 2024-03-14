@@ -1,7 +1,7 @@
 import { Container } from "./common/Container";
 import FutureSkills from "./common/FutureSkills";
 import Header from "./common/Header";
-import PortfolioSection from "./common/PortfolioSection";
+import Portfolio from "./common/Portfolio";
 import Skills from "./common/Skills";
 import useSkills from "./getCurrentSkills";
 
@@ -24,7 +24,7 @@ function App() {
         title="What I want to learn next 🚀"
         skills={skills.futureSkills}
       />
-      <PortfolioSection 
+      <Portfolio 
         title="Portfolio"
         subtitle="My recent projects"
       />

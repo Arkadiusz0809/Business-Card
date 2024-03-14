@@ -7,8 +7,8 @@ export const Tile = ({ title, description, demo, code }) => {
             <Title>{title}</Title>
             <Description>{description}</Description>
             <Link>
-                <LinkName>Demo:<LinkCode>{demo}</LinkCode></LinkName>
-                <LinkName>Code:<LinkCode>{code}</LinkCode></LinkName>
+                <LinkName>Demo:<LinkCode href={demo}>{demo}</LinkCode></LinkName>
+                <LinkName>Code:<LinkCode href={code}>{code}</LinkCode></LinkName>
             </Link>
         </Section>
     )

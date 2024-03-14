@@ -31,4 +31,6 @@ export const SubTitle = styled.h3`
 export const Content = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+
 `;
