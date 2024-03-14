@@ -16,7 +16,7 @@ export const Title = styled.h2 `
     font-size: 30px;
     color: ${({theme}) => theme.color.mineshaft};
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     word-wrap: break-word;
     padding-bottom: 13px;
 `;

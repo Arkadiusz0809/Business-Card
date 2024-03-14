@@ -1,7 +1,8 @@
 import { Container } from "./common/Container";
-import FutureSkillSection from "./common/FutureSkillSection";
+import FutureSkills from "./common/FutureSkills";
 import Header from "./common/Header";
-import SkillSection from "./common/SkillSection";
+import PortfolioSection from "./common/PortfolioSection";
+import Skills from "./common/Skills";
 import useSkills from "./getCurrentSkills";
 
 function App() {
@@ -15,14 +16,17 @@ function App() {
         description="✅💻 I am a beginner programmer, react is a small revelation for me, I want to develop further in this direction, I am currently looking for a job."
         extraText="Hire me"
       />
-      <SkillSection
+      <Skills
         title="My skillset includes 🛠️"
         skills={skills.currentSkills}
       />
-      <FutureSkillSection
+      <FutureSkills
         title="What I want to learn next 🚀"
         skills={skills.futureSkills}
-
+      />
+      <PortfolioSection 
+        title="Portfolio"
+        subtitle="My recent projects"
       />
     </Container>
   );
