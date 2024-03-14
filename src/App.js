@@ -21,6 +21,8 @@ function App() {
       />
       <FutureSkillSection
         title="What I want to learn next 🚀"
+        skills={skills.futureSkills}
+
       />
     </Container>
   );

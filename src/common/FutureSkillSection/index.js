@@ -1,13 +1,20 @@
-import { Section, Title } from "./style"
+import { Section, Title, ListItem, List } from "./style"
 
 
-const FutureSkillSection = () => {
+const FutureSkillSection = ({ title, skills}) => {
 
     return(
         <Section>
-            <Title>
-
-            </Title>
+            <Title>{title}</Title>
+            <List>
+                {skills && skills.map((skill, index) => (
+                    <ListItem
+                        key={index} 
+                    >
+                        {skill}
+                    </ListItem>
+                ))}
+            </List>
         </Section>
     )
 }

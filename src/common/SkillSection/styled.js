@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-    margin: auto;
+    margin: 73px auto;
     background: ${({theme})=> theme.color.white};
     padding: 32px;
     max-width: 1216px;

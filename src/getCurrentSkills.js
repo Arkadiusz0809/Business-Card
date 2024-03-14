@@ -11,7 +11,7 @@ export const getCurrentSkills = async () => {
 }
 
 const useSkills = () => {
-    const [skills, setSkills] = useState({ currentSkills: [] });
+    const [skills, setSkills] = useState({ currentSkills: [], futureSkills: [] });
 
     useEffect(() => {
         getCurrentSkills()
