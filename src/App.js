@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "./common/Container";
+import Header from "./common/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header 
+      caption ="THIS IS"
+      name = "Arkadiusz Toruń"
+      description = "✅💻 I am a beginner programmer, react is a small revelation for me, I want to develop further in this direction, I am currently looking for a job."
+      extraText = "Hire me"
+      />
+    </Container>
   );
 }
 
