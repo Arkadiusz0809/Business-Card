@@ -1,16 +1,30 @@
-import { Section, Title, Description, Link, LinkName, LinkCode } from "./styled"
+import { List, ListTile, Title, Description, Link, LinkName, LinkCode } from "./styled"
 
 
 export const Tile = ({ title, description, demo, code }) => {
     return (
-        <Section>
-            <Title>{title}</Title>
-            <Description>{description}</Description>
-            <Link>
-                <LinkName>Demo:<LinkCode href={demo}>{demo}</LinkCode></LinkName>
-                <LinkName>Code:<LinkCode href={code}>{code}</LinkCode></LinkName>
-            </Link>
-        </Section>
+        <List>
+            <ListTile>
+                <Title>{title}</Title>
+                <Description>{description}</Description>
+                {!!demo && (
+                    <Link>
+                        <LinkName>
+                            <dt>Demo:</dt>
+                            <LinkCode href={demo} target="_blank" rel="noreferrer">
+                                {demo}
+                            </LinkCode>
+                        </LinkName>
+                        <LinkName>
+                            <dt>Code:</dt>
+                            <LinkCode href={code} target="_blank" rel="noreferrer">
+                                {code}
+                            </LinkCode>
+                        </LinkName>
+                    </Link>
+                )}
+            </ListTile>
+        </List>
     )
 }
 
