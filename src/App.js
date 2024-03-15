@@ -7,7 +7,7 @@ import Skills from "./common/Skills";
 import ThemeSwitch from "./common/ThemeSwitch";
 import useSkills from "./getCurrentSkills";
 
-function App() {
+export const PersonalHomepage = () => {
   const skills = useSkills();
 
   return (
@@ -18,6 +18,7 @@ function App() {
         name="Arkadiusz Toruń"
         description="✅💻 I am a beginner programmer, react is a small revelation for me, I want to develop further in this direction, I am currently looking for a job."
         extraText="Hire me"
+        email="arek.torun12@gmail.com"
       />
       <Skills
         title="My skillset includes 🛠️"
@@ -33,11 +34,11 @@ function App() {
       />
       <Footer
         title="Let's Talk!"
-        adres="arek.torun12@gmail.com"
+        email="arek.torun12@gmail.com"
         description="I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to contact me🤞"
       />
     </Container>
   );
 }
 
-export default App;
+export default PersonalHomepage;
