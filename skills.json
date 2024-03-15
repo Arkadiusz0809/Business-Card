@@ -20,5 +20,13 @@
         "Redux (Toolkit)",
         "Trello",
         "Scrum"
+    ],
+    "futureSkills":[
+        "React Context",
+        "Node.js",
+        "TypeScript",
+        "Cypress",
+        "Unit testing",
+        "JS Classes"
     ]
 }
