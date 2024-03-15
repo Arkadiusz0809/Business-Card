@@ -1,4 +1,5 @@
 import { Container } from "./common/Container";
+import Footer from "./common/Footer";
 import FutureSkills from "./common/FutureSkills";
 import Header from "./common/Header";
 import Portfolio from "./common/Portfolio";
@@ -24,9 +25,14 @@ function App() {
         title="What I want to learn next 🚀"
         skills={skills.futureSkills}
       />
-      <Portfolio 
+      <Portfolio
         title="Portfolio"
         subtitle="My recent projects"
+      />
+      <Footer
+        title="Let's Talk!"
+        adres="arek.torun12@gmail.com"
+        description="I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to contact me🤞"
       />
     </Container>
   );
