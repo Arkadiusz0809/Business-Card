@@ -10,13 +10,13 @@ export const Tile = ({ title, description, demo, code }) => {
                 {!!demo && (
                     <Link>
                         <LinkName>
-                            <dt>Demo:</dt>
+                            Demo:
                             <LinkCode href={demo} target="_blank" rel="noreferrer">
                                 {demo}
                             </LinkCode>
                         </LinkName>
                         <LinkName>
-                            <dt>Code:</dt>
+                            Code:
                             <LinkCode href={code} target="_blank" rel="noreferrer">
                                 {code}
                             </LinkCode>
