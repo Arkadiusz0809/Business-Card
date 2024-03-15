@@ -23,7 +23,7 @@ export const Title = styled.h2`
     font-weight: 900;
     font-size: 30px;
     letter-spacing: 2px;
-    color: ${({theme}) => theme.color.mineshaft};
+    color: ${({theme}) => theme.colors.textPrimary};
     margin: auto;
 
 `;
@@ -32,7 +32,7 @@ export const SubTitle = styled.h3`
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 2px;
-    color: ${({theme}) => theme.color.mineshaft};
+    color: ${({theme}) => theme.colors.textPrimary};
     margin: auto;
     padding-bottom: 24px;
 `;
@@ -42,4 +42,7 @@ export const Content = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        grid-template-columns: 1fr;
+    }
 `;

@@ -4,6 +4,7 @@ export const Section = styled.section`
     margin: 73px auto;
     background: ${({ theme }) => theme.colors.boxBackground};
     padding: 32px;
+    display: grid;
     max-width: 1216px;
     box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: ${({ theme }) => theme.borderRadiusSmall};
@@ -33,11 +34,10 @@ export const List = styled.ul`
     border-top: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
     margin-bottom: 0;
     display: grid;
+    grid-gap: 8px 70px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8px 115px;
     font-weight: 400;
     font-size: 18px;
-    padding-top: 16px;
     padding: 32px 0 0 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) {
@@ -49,7 +49,7 @@ export const List = styled.ul`
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 14px;
+        font-size: 13px;
         margin-top: 12px;
         grid-template-columns: 1fr;
     }

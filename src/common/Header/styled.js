@@ -51,7 +51,7 @@ export const Name = styled.h1`
 export const Description = styled.h1`
     font-weight: 400;
     font-size: 20px;
-    color: ${({ theme }) => theme.color.site.text};
+    color: ${({ theme }) => theme.colors.site.text};
     margin: 23px 0 32px 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
@@ -64,7 +64,7 @@ export const Description = styled.h1`
     }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
     margin-bottom: 0 0 73px 0;
     padding: 12px 16px;
     border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
@@ -72,7 +72,7 @@ export const Button = styled.button`
     border-radius: ${({ theme }) => theme.borderRadiusSmall};
     font-weight: 600;
     font-size: 20px;
-    color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.colors.buttonLink.text };
     display: inline-flex;
     align-items: center;
     transition: box-shadow 0.3s;
