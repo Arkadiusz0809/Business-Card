@@ -4,6 +4,7 @@ import FutureSkills from "./common/FutureSkills";
 import Header from "./common/Header";
 import Portfolio from "./common/Portfolio";
 import Skills from "./common/Skills";
+import ThemeSwitch from "./common/ThemeSwitch";
 import useSkills from "./getCurrentSkills";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <Container>
+      <ThemeSwitch />
       <Header
         caption="THIS IS"
         name="Arkadiusz Toruń"
