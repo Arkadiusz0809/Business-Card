@@ -1,14 +1,23 @@
 import styled from "styled-components";
+import { ReactComponent as GithubIcon } from "./git-logo.svg";
 
 export const Section = styled.div`
     margin: 72px auto;
-    display: grid;
     max-width: 1216px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 48px;
+    }
 `;
 
-export const Img = styled.img`
-    margin: auto;
+export const StyledGithubIcon = styled(GithubIcon)`
+    color: ${({theme}) => theme.colors.primary};
+    margin-bottom: 8px;
 `;
+
+export const Header = styled.header`
+    text-align: center;
+`; 
 
 export const Title = styled.h2`
     font-weight: 900;
