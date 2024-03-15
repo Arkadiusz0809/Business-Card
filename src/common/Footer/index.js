@@ -1,17 +1,16 @@
-import { Container, Welcome, Description, Email, Icon, Icons } from "./styled"
-import git from "../../images/Fill-51.svg"
+import { SocialIcons } from "./icons";
+import { Container, Welcome, Paragraph, Email, Address } from "./styled"
 
 
-export const Footer = ({ title, adres, description }) => {
+export const Footer = ({ title, email, description }) => {
     return (
         <Container>
             <Welcome>{title}</Welcome>
-            <Email>{adres}</Email>
-            <Description>{description}</Description>
-            <Icons>
-                <Icon src={git} />
-            </Icons>
-
+            <Address>
+                <Email href={`mailto:${email}`}>{email}</Email>
+                <Paragraph>{description}</Paragraph>
+                <SocialIcons />
+            </Address>
         </Container>
     )
 }

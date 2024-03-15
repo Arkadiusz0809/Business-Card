@@ -1,34 +1,48 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.footer`
     max-width: 691px;
     margin: 120px 142px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 48px;
+    }
 `;
 
-export const Welcome = styled.caption`
+export const Welcome = styled.h2`
     font-weight: 700;
     font-size: 12px;
-    color: ${({theme}) => theme.color.slategray};
-    display: flex;
+    color: ${({ theme }) => theme.colors.site.text};
     margin-bottom: 24px;
+    letter-spacing: initial;
+    text-transform: uppercase;
+`;
+
+export const Address = styled.address`
+    font-style: unset;
 `;
 
 export const Email = styled.a`
     font-weight: 900;
     font-size: 32px;
-    margin-bottom: 24px;
+    margin: 24px 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin: 12px 0;
+    }
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.primary};
+    }
 `;
 
-export const Description = styled.p`
+export const Paragraph = styled.p`
     font-weight: 400;
     font-size: 18px;
-    line-height: 25.2px;
-    margin-bottom: 56px;
-`;
-
-export const Icons = styled.div`
-`;
-
-export const Icon = styled.img`
-
+    line-height: 1.4;
+    margin: 0;
+    
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 14px;
+    }
 `;
