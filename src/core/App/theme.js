@@ -2,7 +2,7 @@ const colorNames = {
     white: "#FFFFFF",
     slateGray: "#6E7E91",
     black: "#000000",
-    iron: "rgba(209, 213, 218, 0.3",
+    iron: "rgba(209, 213, 218, 0.3)",
     scienceBlue: "#0366D6",
     mineshaft: "#252525",
     whiteLilac: "#FBFBFE",
@@ -35,6 +35,7 @@ export const themeLight = {
     colors: {
         primary: colorNames.scienceBlue,
         textPrimary: colorNames.mineShaft,
+        bodyText: colorNames.black,
         site: {
             background: colorNames.whiteLilac,
             text: colorNames.slateGray,
