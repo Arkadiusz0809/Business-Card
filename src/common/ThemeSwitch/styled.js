@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as SunIcon } from "./toggle.svg";
+import { ReactComponent as SunIcon } from "./brightness 1.svg";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -21,6 +21,7 @@ export const Text = styled.span`
     text-transform: uppercase;
     font-weight: 700;
     line-height: 15.6px;
+    margin: 5px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         display: none;

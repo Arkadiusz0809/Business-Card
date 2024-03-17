@@ -14,6 +14,7 @@ export const Wrapper = styled.article`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-gap: 12px;
         grid-template-columns: 1fr;
+        margin: 0 ;
     }
 `;
 
@@ -34,6 +35,10 @@ export const Caption = styled.div`
     color: ${({ theme }) => theme.colors.textPrimary};
     margin-top: 64px;
     letter-spacing: initial;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 10px;
+    }
 `;
 
 export const Name = styled.h1`
@@ -66,6 +71,7 @@ export const Description = styled.h1`
 
 export const Button = styled.a`
     margin-bottom: 0 0 73px 0;
+    text-decoration: none;
     padding: 12px 16px;
     border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
     background: ${({ theme }) => theme.colors.primary};
