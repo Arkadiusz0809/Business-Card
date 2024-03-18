@@ -19,7 +19,7 @@ export const socials = [
     },
     {
         name: "LinkedIn",
-        url: "http://lickedin.com",
+        url: "https://www.linkedin.com/in/arkadiusz-torun-23894a1b9/",
         Icon: styleIcon(LinkedInIcon),
     },
     {
