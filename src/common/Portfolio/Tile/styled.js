@@ -10,7 +10,8 @@ export const List = styled.ul`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-template-rows: 1fr;
-        grid-gap: 24px;
+        grid-gap: 0px;
+        margin-top: 8px;
     }
 `;
 
@@ -28,7 +29,7 @@ export const ListTile = styled.li`
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        padding: 20px;
+        padding: 16px;
     }
 `;
 
@@ -40,7 +41,7 @@ export const Title = styled.h3`
     margin: 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        padding: 20px;
+        font-size: 16px;
     }
 `;
 
@@ -75,6 +76,11 @@ export const LinkName = styled.dd`
     font-weight: 400px;
     font-size: 18px;
     color: ${({ theme }) => theme.colors.textPrimary};
+
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 14px;
+    }
 `;
 
 export const LinkCode = styled.a`
@@ -90,6 +96,10 @@ export const LinkCode = styled.a`
 
     &:hover {
         border-color: unset;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 14px;
     }
 `;
 

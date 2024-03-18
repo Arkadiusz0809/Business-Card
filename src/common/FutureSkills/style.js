@@ -6,12 +6,21 @@ export const Section = styled.div`
     padding: 32px;
     max-width: 1216px;
     box-shadow: ${({ theme }) => theme.boxShadow};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        padding: 16px;
+        margin: 24px auto;
+    } 
 `;
 
 export const Title = styled.h2 `
     font-weight: 900;
     font-size: 30px;
     color: ${({theme}) => theme.colors.textPrimary};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 18px;
+    } 
 `;
 
 export const List = styled.li`
@@ -23,11 +32,11 @@ export const List = styled.li`
     grid-gap: 8px 115px;
     font-weight: 400;
     font-size: 18px;
-    padding-top: 16px;
     padding: 32px 0 0 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        grid-template-columns: 1fr;  
+        grid-template-columns: 1fr;
+        font-size: 14px;
     } 
 `;
 
@@ -39,4 +48,7 @@ export const ListItem = styled.li`
     }
     color: ${({ theme }) => theme.colors.site.text};
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        padding-right: 6px;
+    } 
 `;

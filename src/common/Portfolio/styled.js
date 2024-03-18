@@ -7,12 +7,20 @@ export const Section = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         margin-top: 48px;
+        margin: 48px auto;
     }
 `;
 
 export const StyledGithubIcon = styled(GithubIcon)`
     color: ${({theme}) => theme.colors.primary};
     margin-bottom: 8px;
+    width: 40px;
+    height: 39px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        width: 32px;
+        height: 31.21px;
+    }
 `;
 
 export const Header = styled.header`
@@ -26,6 +34,9 @@ export const Title = styled.h2`
     color: ${({theme}) => theme.colors.textPrimary};
     margin: auto;
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 18px;
+    }
 `;
 
 export const SubTitle = styled.h3`
@@ -35,6 +46,10 @@ export const SubTitle = styled.h3`
     color: ${({theme}) => theme.colors.textPrimary};
     margin: auto;
     padding-bottom: 24px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 17px;
+    }
 `;
 
 export const Content = styled.div`
@@ -44,5 +59,6 @@ export const Content = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-template-columns: 1fr;
+        grid-gap: 0;
     }
 `;

@@ -10,7 +10,7 @@ export const Section = styled.section`
     border-radius: ${({ theme }) => theme.borderRadiusSmall};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        margin-top: 48px;
+        margin: 48px auto;
         padding: 16px;
     }
 `;
@@ -27,6 +27,11 @@ export const Title = styled.h2`
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) {
         padding-bottom: 12px;   
     }   
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 18px;
+    }        
+
 `;
 
 export const List = styled.ul`

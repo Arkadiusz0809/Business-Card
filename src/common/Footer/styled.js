@@ -4,9 +4,8 @@ export const Container = styled.footer`
     margin: 72px auto;
     max-width: 1216px;
     
-
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        margin-top: 48px;
+        margin: 10px 0;
     }
 `;
 
