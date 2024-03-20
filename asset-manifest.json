@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Business-Card/static/js/main.076f4caf.js",
+    "main.js": "/Business-Card/static/js/main.b6dfa446.js",
     "static/js/453.d0c65a9d.chunk.js": "/Business-Card/static/js/453.d0c65a9d.chunk.js",
     "static/media/Arek.png": "/Business-Card/static/media/Arek.863c98d7d9d90ee8769c.png",
     "static/media/logo-instagram.svg": "/Business-Card/static/media/logo-instagram.d048b78a151194fa42941be0ac0817f4.svg",
@@ -10,10 +10,10 @@
     "index.html": "/Business-Card/index.html",
     "static/media/mail-icon.svg": "/Business-Card/static/media/mail-icon.514461521cb8d76b55e16ac430346abb.svg",
     "static/media/logo-facebook.svg": "/Business-Card/static/media/logo-facebook.d0e03d1efdc7532f13ccb0ceb616d2d6.svg",
-    "main.076f4caf.js.map": "/Business-Card/static/js/main.076f4caf.js.map",
+    "main.b6dfa446.js.map": "/Business-Card/static/js/main.b6dfa446.js.map",
     "453.d0c65a9d.chunk.js.map": "/Business-Card/static/js/453.d0c65a9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.076f4caf.js"
+    "static/js/main.b6dfa446.js"
   ]
 }
