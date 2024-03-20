@@ -4,6 +4,7 @@ import α from "color-alpha";
 export const List = styled.ul`
     margin-top: 24px;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     list-style: none;
     padding: 0;
     grid-gap: 32px;
@@ -15,7 +16,7 @@ export const List = styled.ul`
     }
 `;
 
-export const ListTile = styled.li`
+export const Tile = styled.li`
     padding: 56px;
     margin: 0;
     background: ${({ theme }) => theme.colors.boxBackground};
@@ -58,7 +59,7 @@ export const Description = styled.p`
     }
 `;
 
-export const Link = styled.dl` 
+export const Links = styled.dl`
     display: grid;
     grid-gap: 8px;
     line-height: 1.6;
@@ -72,18 +73,16 @@ export const Link = styled.dl`
     
 `;
 
-export const LinkName = styled.dd`
-    font-weight: 400px;
-    font-size: 18px;
-    color: ${({ theme }) => theme.colors.textPrimary};
-
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 14px;
-    }
+export const LinksRow = styled.div`
+    display: grid;
+    grid-template-columns: 4em 1fr;
 `;
 
-export const LinkCode = styled.a`
+export const LinksValue = styled.dd`
+    margin: 0;
+`;
+
+export const Link = styled.a`
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;

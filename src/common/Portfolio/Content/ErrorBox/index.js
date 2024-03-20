@@ -1,6 +1,7 @@
 import { Button } from "../../../../Header/styled";
 import { ReactComponent as WarningIcon } from "./error-icon.svg";
 import { Header, Paragraph, Wrapper } from "./styled";
+import { githubUsername } from "../../githubUsername";
 
 export const ErrorBox = () => (
     <Wrapper>
@@ -10,6 +11,6 @@ export const ErrorBox = () => (
             Sorry, failed to load Github&nbsp;projects.<br />
             You can check them directly&nbsp;on&nbsp;Github.
         </Paragraph>
-        <Button href={`https://github.com/Arkadiusz0809`} target="_blank">Go to Github</Button>
+        <Button href={`https://github.com/${githubUsername}`} target="_blank">Go to Github</Button>
     </Wrapper>
 );

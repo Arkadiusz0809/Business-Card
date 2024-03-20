@@ -1,8 +1,9 @@
-import Tile from "..";
-import { ErrorBox } from "./ErrorBox/index";
-import { Loading } from "./Loading/index";
+import { ErrorBox } from "./ErrorBox";
+import { Loading } from "./Loading";
+import { Repositories } from "./Repositories";
 
 export const Content = ({ status, repositories }) => {
+    
     switch (status) {
         case "initial":
             return null;
@@ -14,7 +15,7 @@ export const Content = ({ status, repositories }) => {
             return <ErrorBox />
 
         case "success":
-            return <Tile />
+            return <Repositories repositories={repositories}/>
 
         default:
             throw new Error(`incorrect status: ${status}`);

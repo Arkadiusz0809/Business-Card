@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { ReactComponent as SunIcon } from "./brightness 1.svg";
 
 export const Wrapper = styled.div`
+    max-width: 1200px;
     display: flex;
     justify-content: flex-end;
 `;
@@ -22,6 +23,7 @@ export const Text = styled.span`
     font-weight: 700;
     line-height: 15.6px;
     margin: 5px;
+    color: ${({ theme }) => theme.colors.textPrimary};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         display: none;

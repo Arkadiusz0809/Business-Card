@@ -37,7 +37,7 @@ export const Email = styled.a`
     font-weight: 900;
     font-size: 32px;
     margin: 24px 0;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.bodyText};
     text-decoration: none;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
