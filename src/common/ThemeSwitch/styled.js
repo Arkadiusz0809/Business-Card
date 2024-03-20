@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as SunIcon } from "./brightness 1.svg";
+import { ReactComponent as SunIcon } from "./sun.svg";
 
 export const Wrapper = styled.div`
     max-width: 1200px;

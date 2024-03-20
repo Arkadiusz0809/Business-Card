@@ -9,7 +9,7 @@ const Header = ({ caption, name, description, extraText, email }) => (
       <Caption>{caption}</Caption>
       <Name>{name}</Name>
       <Description>{description}</Description>
-      <Button href={`mailto:${email}`}>
+      <Button href={`mailto:${email}`} title={email}>
         <ButtonIcon src={icon} />
         <ButtonName>{extraText}</ButtonName>
       </Button>
