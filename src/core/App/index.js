@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import { Normalize } from "styled-normalize";
 import { themeDark, themeLight } from "./theme";
-import PersonalHomepage from "../../App";
+import { PersonalHomepage } from "../../App";
 
 
 export const App = () => {

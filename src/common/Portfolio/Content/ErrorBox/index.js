@@ -1,4 +1,4 @@
-import { Button } from "../../../../Header/styled";
+import Button from "../../../Header";
 import { ReactComponent as WarningIcon } from "./error-icon.svg";
 import { Header, Paragraph, Wrapper } from "./styled";
 import { githubUsername } from "../../githubUsername";

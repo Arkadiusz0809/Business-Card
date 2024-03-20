@@ -2,10 +2,10 @@ import { Container } from "./common/Container";
 import Footer from "./common/Footer";
 import FutureSkills from "./common/FutureSkills";
 import Header from "./common/Header";
-import Portfolio from "./common/Portfolio";
+import { Portfolio } from "./common/Portfolio";
 import Skills from "./common/Skills";
-import ThemeSwitch from "./common/ThemeSwitch";
 import useSkills from "./getCurrentSkills";
+import { ThemeSwitch } from "./common/ThemeSwitch";
 
 export const PersonalHomepage = () => {
   const skills = useSkills();
@@ -39,6 +39,4 @@ export const PersonalHomepage = () => {
       />
     </Container>
   );
-}
-
-export default PersonalHomepage;
+};

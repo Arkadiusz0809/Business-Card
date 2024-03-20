@@ -46,7 +46,7 @@ export const IconWrapper = styled.span`
     display: flex;
     transition: transform 0.3s;
 
-    ${({ moveToRight }) => moveToRight && css`
+    ${({ $moveToRight }) => $moveToRight && css`
         transform: translateX(20px);
     `}
 `;

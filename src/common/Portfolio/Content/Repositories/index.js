@@ -26,4 +26,4 @@ export const Repositories = ({ repositories }) => (
             </Tile>
         ))}
     </List>
-)
+);

@@ -51,14 +51,3 @@ export const SubTitle = styled.h3`
         font-size: 17px;
     }
 `;
-
-export const Content = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-    }
-`;

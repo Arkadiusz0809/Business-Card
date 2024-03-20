@@ -9,10 +9,9 @@ export const List = styled.ul`
     padding: 0;
     grid-gap: 32px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        grid-template-rows: 1fr;
-        grid-gap: 0px;
-        margin-top: 8px;
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
     }
 `;
 
@@ -26,19 +25,17 @@ export const Tile = styled.li`
     border-radius: ${({ theme }) => theme.borderRadiusSmall};
 
     &:hover {
-        border-color: ${({ theme }) => theme.colors.tile.borderHover};
+        border-color: ${({ theme }) => theme.colors.tile.borderHover}
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        padding: 16px;
+        padding: 20px;
     }
 `;
 
 export const Title = styled.h3`
-    font-weight: 700;
     font-size: 24px;
-    letter-spacing: 2px;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.tile.header};
     margin: 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
@@ -47,11 +44,8 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: ${({ theme }) => theme.colors.site.text};
-    line-height: 25.2px;
+    margin-top: 24px;
+    line-height: 1.4;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         margin-top: 16px;
@@ -60,17 +54,16 @@ export const Description = styled.p`
 `;
 
 export const Links = styled.dl`
+    margin-top: 24px;
+    margin-bottom: 0;
     display: grid;
     grid-gap: 8px;
     line-height: 1.6;
-    grid-template-rows: repeat(2, 1fr);
-    margin-left: -40px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        margin-top: 16px;
         font-size: 14px;
+        margin-top: 16px;
     }
-    
 `;
 
 export const LinksRow = styled.div`
@@ -83,22 +76,12 @@ export const LinksValue = styled.dd`
 `;
 
 export const Link = styled.a`
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 1px;
-    word-break: break-all;
     color: ${({ theme }) => theme.colors.primary};
+    text-decoration: none;
     border-bottom: 1px solid ${({ theme }) => α(theme.colors.primary, 0.3)};
     padding-bottom: 1px;
-    margin-left: 8px;
 
     &:hover {
         border-color: unset;
     }
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 14px;
-    }
 `;
-
