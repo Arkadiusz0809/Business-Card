@@ -69,6 +69,7 @@ export const Links = styled.dl`
 export const LinksRow = styled.div`
     display: grid;
     grid-template-columns: 4em 1fr;
+    color: ${({ theme }) => theme.colors.bodyText};
 `;
 
 export const LinksValue = styled.dd`

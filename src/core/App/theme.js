@@ -68,6 +68,7 @@ export const themeDark = {
     colors: {
         primary: colorNames.dodgerBlue,
         textPrimary: colorNames.white,
+        bodyText: colorNames.white,
         site: {
             background: colorNames.mineShaft,
             text: colorNames.white,
