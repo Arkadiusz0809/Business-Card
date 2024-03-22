@@ -1,6 +1,6 @@
 const colorNames = {
-    white: "#FFFFFF",
-    slateGray: "#6E7E91",
+    white: '#FFFFFF',
+    slateGray: '#6E7E91',
     black: "#000000",
     iron: "rgba(209, 213, 218, 0.3)",
     scienceBlue: "#0366D6",
@@ -12,10 +12,11 @@ const colorNames = {
     anakiwa: "#8CC2FF",
     tropicalBlue: "#CDE0F7",
     porcelain: "#F2F3F4",
-    mercury: "#e5e5e5",
+    mercury: "#E5E5E5",
     doveGray: "#6D6D6D",
     tundora: "#414141",
-    mineShaft: "#252525",
+    mineShaft: '#363636',
+    mineShaftSwitch: '#363636B8',
     mineShaftLighter: "#313131",
 };
 
@@ -54,7 +55,10 @@ export const themeLight = {
         },
         themeSwitch: {
             background: colorNames.mercury,
+            wrapper: colorNames.slateGray,
             icon: colorNames.white,
+            text: colorNames.slateGray,
+            border: colorNames.slateGray,
         },
     },
 };
@@ -81,8 +85,11 @@ export const themeDark = {
             header: colorNames.white,
         },
         themeSwitch: {
-            background: colorNames.doveGray,
+            background: colorNames.iron,
+            wrapper: colorNames.white,
             icon: colorNames.mineShaft,
+            text: colorNames.white,
+            border: colorNames.white,
         },
     },
 };
