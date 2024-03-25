@@ -8,7 +8,7 @@ export const Content = () => {
 
     const status = useSelector(selectRepositoriesStatus);
     const repositories = useSelector(selectRepositories);
-    
+
     switch (status) {
         case "initial":
             return null;

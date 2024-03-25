@@ -3,9 +3,9 @@ import { List, Tile, Title, Description, Links, LinksRow, LinksValue, Link } fro
 
 export const Repositories = ({ repositories }) => (
     <List>
-        {repositories.map(({ id, title, description, homepage, html_url }) => (
+        {repositories.map(({ id, name, description, homepage, html_url }) => (
             <Tile key={id}>
-                <Title>{title}</Title>
+                <Title>{name}</Title>
                 <Description>{description}</Description>
                 <Links>
                     {!!homepage && (
@@ -19,7 +19,7 @@ export const Repositories = ({ repositories }) => (
                     <LinksRow>
                         <dt>Code:</dt>
                         <LinksValue>
-                            <Link href={html_url} target="_blank" rel="noreferrer">{html_url}</Link>
+                            <Link target="_blank" rel="noreferrer" href={html_url}>{html_url}</Link>
                         </LinksValue>
                     </LinksRow>
                 </Links>

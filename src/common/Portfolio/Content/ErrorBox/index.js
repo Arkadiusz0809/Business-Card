@@ -1,11 +1,9 @@
-import Button from "../../../Header";
-import { ReactComponent as WarningIcon } from "./error-icon.svg";
-import { Header, Paragraph, Wrapper } from "./styled";
+import { Header, Paragraph, Wrapper, Button, Icon } from "./styled";
 import { githubUsername } from "../../githubUsername";
 
 export const ErrorBox = () => (
     <Wrapper>
-        <WarningIcon />
+        <Icon />
         <Header>Oooops! something went&nbsp;wrong...</Header>
         <Paragraph>
             Sorry, failed to load Github&nbsp;projects.<br />
