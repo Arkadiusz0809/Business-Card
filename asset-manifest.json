@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/Business-Card/static/js/main.38f571e2.js",
+    "main.js": "/Business-Card/static/js/main.80c1a1a0.js",
     "static/js/453.d0c65a9d.chunk.js": "/Business-Card/static/js/453.d0c65a9d.chunk.js",
     "static/media/Arek.png": "/Business-Card/static/media/Arek.863c98d7d9d90ee8769c.png",
     "static/media/logo-instagram.svg": "/Business-Card/static/media/logo-instagram.e34807d6ce955a52360aad5437d4c66f.svg",
     "static/media/sun.svg": "/Business-Card/static/media/sun.700782415f8049da7a22b45f9f842d12.svg",
     "static/media/git-logo.svg": "/Business-Card/static/media/git-logo.be99039c9071cc86640b910f01e15ea2.svg",
-    "static/media/error-icon.svg": "/Business-Card/static/media/error-icon.d11a8a46540c31733a7650db63158b6e.svg",
     "static/media/logo-linkedin.svg": "/Business-Card/static/media/logo-linkedin.8e4ac02ce7feebba4972d3b4e4c08775.svg",
+    "static/media/Danger.svg": "/Business-Card/static/media/Danger.98976b596944f25fcecdea781bbd285e.svg",
     "index.html": "/Business-Card/index.html",
     "static/media/mail-icon.svg": "/Business-Card/static/media/mail-icon.514461521cb8d76b55e16ac430346abb.svg",
     "static/media/logo-facebook.svg": "/Business-Card/static/media/logo-facebook.d0e03d1efdc7532f13ccb0ceb616d2d6.svg",
     "static/media/loading-icon.svg": "/Business-Card/static/media/loading-icon.6610fdaa552448bd3d20e14a9a2c6237.svg",
-    "main.38f571e2.js.map": "/Business-Card/static/js/main.38f571e2.js.map",
+    "main.80c1a1a0.js.map": "/Business-Card/static/js/main.80c1a1a0.js.map",
     "453.d0c65a9d.chunk.js.map": "/Business-Card/static/js/453.d0c65a9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.38f571e2.js"
+    "static/js/main.80c1a1a0.js"
   ]
 }
