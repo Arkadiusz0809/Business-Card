@@ -2,9 +2,9 @@ import styled, { css } from "styled-components";
 import { ReactComponent as SunIcon } from "./sun.svg";
 
 export const Wrapper = styled.div`
-    max-width: 1200px;
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    left: 70vw;
 `;
 
 export const Button = styled.button`
